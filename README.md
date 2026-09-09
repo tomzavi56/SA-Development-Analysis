@@ -1,10 +1,10 @@
 # SA Development Analysis
 
-Statistical analysis of South African development indicators — GDP, poverty, education, employment — using World Bank and Stats SA data.
+Statistical analysis of South African development indicators — poverty and unemployment — using World Bank data.
 
 ## Project Status
 
-In progress — core analysis on poverty and unemployment complete; expanding to additional indicators.
+Core analysis complete.
 
 ## Objective
 
@@ -19,8 +19,7 @@ How did poverty and unemployment in South Africa shift around two major economic
 
 - data/raw/ — raw datasets downloaded from World Bank
 - notebooks/ — exploratory analysis and visualizations
-- src/ — reusable analysis scripts
-- outputs/ — charts, tables, results
+- outputs/ — charts and results
 
 ## Methodology
 
@@ -32,5 +31,18 @@ How did poverty and unemployment in South Africa shift around two major economic
 
 ## Key Findings
 
-- Unemployment rose by ~2.4 percentage points from 2007 to 2010 (22.3% to 24.7%)
+- Unemployment rose by ~2.4 percentage points from 2007 to 2010 (22.3% to 24.7%) following the 2008 financial crisis
+- Unemployment rose by ~5.5 percentage points from 2019 to 2021 (28.5% to 34.0%) following COVID-19 — more than double the rate of increase seen after 2008
+- Unemployment has not returned to pre-shock levels after either event, suggesting a "ratchet effect" where each shock permanently raises the baseline
+- Poverty data is too sparse to isolate a COVID-era spike directly (no data points between 2014 and 2022), a limitation of the dataset rather than the analysis
+
 ![Unemployment vs Poverty chart](outputs/unemployment_vs_poverty.png)
+
+## Limitations
+
+- Poverty data's low frequency (survey-based, only 5 points across 20 years) means it cannot precisely track the timing of either shock — unemployment data carries most of the analytical weight here
+- Analysis is descriptive (percentage-point comparisons), not a formal statistical test of significance
+
+## Tools
+
+Python, pandas, matplotlib, Google Colab
