@@ -33,3 +33,4 @@ How did poverty and unemployment in South Africa shift around two major economic
 ## Key Findings
 
 - Unemployment rose by ~2.4 percentage points from 2007 to 2010 (22.3% to 24.7%)
+![Unemployment vs Poverty chart](outputs/unemployment_vs_poverty.png)
